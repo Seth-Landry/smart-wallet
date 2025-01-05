@@ -1,0 +1,36 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"etherscan-verified/1/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/FiatTokenProxy.sol": "AddressUtils"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"etherscan-verified/1/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/FiatTokenProxy.sol": {
+			"keccak256": "0x25e2e53539bc494270578ae9a97aa4ae6ae90f9818d2e42b053660c78eaa10be",
+			"urls": [
+				"bzzr://8ef3cced4f65374da4f256cc01cad44ffa1f31538abf1cdf16302993146f43f8"
+			]
+		}
+	},
+	"version": 1
+}

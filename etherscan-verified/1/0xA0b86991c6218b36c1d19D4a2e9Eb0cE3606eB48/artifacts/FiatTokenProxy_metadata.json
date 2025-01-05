@@ -1,0 +1,183 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newImplementation",
+						"type": "address"
+					}
+				],
+				"name": "upgradeTo",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newImplementation",
+						"type": "address"
+					},
+					{
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "upgradeToAndCall",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "implementation",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newAdmin",
+						"type": "address"
+					}
+				],
+				"name": "changeAdmin",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_implementation",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "previousAdmin",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "newAdmin",
+						"type": "address"
+					}
+				],
+				"name": "AdminChanged",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "implementation",
+						"type": "address"
+					}
+				],
+				"name": "Upgraded",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"admin()": {
+					"return": "The address of the proxy admin.\r"
+				},
+				"changeAdmin(address)": {
+					"details": "Changes the admin of the proxy.\r Only the current admin can call this function.\r",
+					"params": {
+						"newAdmin": "Address to transfer proxy administration to.\r"
+					}
+				},
+				"implementation()": {
+					"return": "The address of the implementation.\r"
+				},
+				"upgradeTo(address)": {
+					"details": "Upgrade the backing implementation of the proxy.\r Only the admin can call this function.\r",
+					"params": {
+						"newImplementation": "Address of the new implementation.\r"
+					}
+				},
+				"upgradeToAndCall(address,bytes)": {
+					"details": "Upgrade the backing implementation of the proxy and call a function\r on the new implementation.\r This is useful to initialize the proxied contract.\r",
+					"params": {
+						"data": "Data to send as msg.data in the low level call.\r It should include the signature and the parameters of the function to be\r called, as described in\r https://solidity.readthedocs.io/en/develop/abi-spec.html#function-selector-and-argument-encoding.\r",
+						"newImplementation": "Address of the new implementation.\r"
+					}
+				}
+			},
+			"title": "FiatTokenProxy\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"etherscan-verified/1/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/FiatTokenProxy.sol": "FiatTokenProxy"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"etherscan-verified/1/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/FiatTokenProxy.sol": {
+			"keccak256": "0x25e2e53539bc494270578ae9a97aa4ae6ae90f9818d2e42b053660c78eaa10be",
+			"urls": [
+				"bzzr://8ef3cced4f65374da4f256cc01cad44ffa1f31538abf1cdf16302993146f43f8"
+			]
+		}
+	},
+	"version": 1
+}
